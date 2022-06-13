@@ -1,117 +1,93 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.row{
-    width:100%;
-    display: flex;
-    margin:0px;
-    padding:0px;
 
-}
 h1{
-    margin-bottom: 15px;
+    font-size:40px;
+    font-family: Arial, Helvetica, sans-serifs;
+    color:black;
     text-align: center;
-    font-size:20px;
+    margin: 30px;
 }
-
-.menu1 h2{
-    text-align: center;
-    background-color:rosybrown;
-    width:150px;
-
-    float:right;
-    margin:0px;
-    border:2px;
-}
-.menu2 h2{
-    text-align:center;
-    background-color:red;
-    width:100px;
-    float:right;
-    margin:0px;
-    border:2px;
-}
-.menu3 h2{
-    text-align: center;
-    background-color:brown;
-    width:100px;
-    float:right;
-    margin:0px;
-    border:2px;
-
-}
-div.menu1
- {
-    border: 2px yellow;
-    background-color:gray;
-    width:30% ;
-    height  :30%;
-    font-family : Helvetica;
-    text-align:inherit;
-    margin:20px;
- 
-}
-p{
-    clear:right;
-    padding: 10px;
-}
-div.menu2 
+.list
 {
-    border:2px soild blue;
-    background-color: gray;
-    width:30%;
-    height:30%;
-font-family: helvetica;
-text-align:inherit;
-margin:20px;
 
+    
+    font-family: Arial, Helvetica, sans-serifs;
+    width: 30%;
+   
+    border:1px solid yellow;
+    color:yellow;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color:blueviolet;
+    float: left;
+    overflow: auto;
 }
-div.menu3
+.chicken
 {
-    border:2px black;
-    background-color: gray;
-    width:30%;
-    height:30%;
-font-family: helvetica;
- text-align: inherit;
- margin: 20px;
+    background-color: coral;
+    border: 1px solid black;
+    width: 100px;
+    float: right;
+    text-align: center;
+    font-size:26px;
 }
 
- @media (min-width:768px) and (max-width:992px) {
-    menu1{
-        width:50%;
-    
-        margin:10px;
-    }
-    menu2{
-        width:50%;
-        
-        margin:10px;
-
-    }
-    menu3{
-    width:100%;
-
-    margin:10px;
-    }
-}
- @media (max-width:767px) {
-    menu1{
-        width:100%;
-    
-        margin:10px;
-    }
-    menu2{
-        width:100%;
-
-        margin:10px;
-
-    }
-    menu3{
-    width:100%;
-    
-    margin:10px;
-    }
+.beef
+{
+        background-color: red;
+        border: 1px solid black;
+        float: right;
+        width: 100px;
+        text-align: center;
+        font-size:26px;
  }
+ .sushi
+{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 100px;
+    float: right;
+    text-align: center;
+    font-size:26px;
+}
+.list p
+{
+    clear: right;
+    padding: 10px;
+    font-size:18px;
+}
+@media(min-width:768px) and (max-width:991px)
+{
+  .menu1{
+      width: 45%;
     
- 
+  }
+  .menu2{
+    width: 45%;
+  
+}
+.menu3{
+    width: 93%;
+    
+}
+}
+
+@media(max-width:767px) 
+{
+  .menu1{
+      width: 90%;
+    
+  }
+  .menu2{
+    width: 90%;
+    
+}
+.menu3{
+    width: 90%;
+    
+}
+}
