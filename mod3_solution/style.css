@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+}
+.body{
+  background-color:aqua;
+}
+h1{
+   text-align:center;
+   margin-top: 1cm;
+   font-size: xx-large;
+   color: red;
+   background-color:red (214, 203, 224);
+   font-family: 'Times New Roman', Times, serif;
+  
+}
+  .column {
+    border: 2px solid black;
+    background-color:lightcoral;
+    padding-left: 10px;
+    color: aliceblue;
+    margin:20px;
+  }
+  .row {
+        padding-left: 5%;
+        width: 100%;
+  }
+  #heading {
+     float: right;
+     padding-right: 1em;
+     font-size: 1.5em;
+     border: 2px solid rgb(226, 117, 117);
+     font-family: 'Times New Roman', Times, serif;
+     border-right: 0px;
+     margin-top: 0px;
+     border-top: 0px;
+  
+  }
+
+  h2{
+      background-color:rgb(95, 173, 115);  
+    }
+  h3{
+      background-color: rgb(15, 216, 31);
+      color: aliceblue;
+    }
+  h4{
+      background-color:rgb(241, 85, 168);
+    }
+p{
+  font-size: 1em;
+  font-weight:bolder;
+  padding-bottom: 0.5cm;
+}
+
+
+
+  @media(max-width:766px){
+    .box1,.box2,.sec-3{
+      width: 100%;
+      padding: 10px;
+      margin-top:10px;
+      margin-bottom: 10px;
+    }
+    }
+
+  
+  @media(min-width:767px)and (max-width:992px){
+      .box1,.box2,.box3{
+      float: left;
+      padding-bottom: 5%;
+      padding-right: 5%;
+    }
+      .box1{
+        width: 50%;
+      }
+      .box2{
+        
+        width: 50%;
+      }
+      .box3{
+        width: 100%;
+      }
+
+  }  
+  @media (min-width:993px){  
+    .box1,.box2,.box3{   
+      float: left;   
+      padding-bottom: 5%;  
+      padding-right: 4%;
+      width: 33.3%;
+    }
+  
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #e91e63 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e91e63 !important   ;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-align: center !important;
+  color: black !important;
+  top: -6px !important;
+  left: -23px !important;
+}
+
+/*.active{
+
+  background-color:pink;
+}*/
+.nav navbar-nav navbar-right:hover { 
+  color: #ad1af1; 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: orange !important;
+
+}
+
+.navbar-brand{
+
+  background-color: darkgray;
+
+}
+
+.container-fluid>.navbar-header{
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+  background: darkgreen !important;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #9e9e9e !important;
+}
+
+.glyphicon {
+  position: relative;
+  top: 34px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;}
