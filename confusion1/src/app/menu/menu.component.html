@@ -1,4 +1,6 @@
-<div class="container"
+
+<p>hellos</p>
+  <div class="container"
      fxLayout="column"
      fxLayoutGap="10px">
      <div fxFlex >
@@ -9,28 +11,17 @@
      </div>
 
 
-<div fxFlex>
-  <mat-grid-list cols="2" rowHeight="200px">
-    <mat-grid-tile *ngFor="let dish of dishes" (click) ="onSelect(dish)">
-      <img height="200px" src={{dish.image}} alt={{dish.name}}>
-      <mat-grid-tile-footer>
-        <h1 > {{dish.name | uppercase}} </h1>
-         </mat-grid-tile-footer>
-        </mat-grid-tile>
-  </mat-grid-list>
-</div>
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-      </head>
-      <body>
-        
-      </body>
-      
-      </html>
-      <app-dishdetail [dish] = "selectedDish"></app-dishdetail>  
- </div>
+     <div fxFlex  >
+      <mat-grid-list cols="2" rowHeight="200px">
+        <mat-grid-tile *ngFor="let dish of dishes" [routerLink]="['/dishdetail', dish.id]">
+          <img height="200px" src={{dish.image}} alt={{dish.name}}>
+          <mat-grid-tile-footer>
+            <h1 > {{dish.name | uppercase}} </h1>
+             </mat-grid-tile-footer>
+            </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    
+          
+    
+     
