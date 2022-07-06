@@ -21,6 +21,7 @@ import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service'
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { Promotion } from './shared/promotion';
+import {LeaderService} from './services/leader.service';
 
 
 @NgModule({
@@ -47,10 +48,11 @@ import { Promotion } from './shared/promotion';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    
   
   ],
   providers: [DishService,
-  Promotion],
+  Promotion,LeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

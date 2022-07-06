@@ -14,8 +14,6 @@ import{DishService} from '../services/dish.service';
 
 export class DishdetailComponent implements OnInit {
  
-
-  dishes:Dish[];
     dish:Dish;
 
 
@@ -26,7 +24,7 @@ export class DishdetailComponent implements OnInit {
     private location:Location) { }
 
   ngOnInit()  { 
-  let id=this.route.snapshot.params['id'];
+  const id=this.route.snapshot.params['id'];
   this.dish=this.dishService.getDish(id);
   }
   goBack():void{
